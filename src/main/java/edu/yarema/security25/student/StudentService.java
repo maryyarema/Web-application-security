@@ -23,9 +23,9 @@ public class StudentService {
     @PostConstruct
     void init() {
         repository.saveAll(List.of(
-                new Student( "John", "Doe", "Computer Science"),
-                new Student( "Jane", "Smith", "Mathematics"),
-                new Student( "Mariia", "Yarema", "Physics")
+                new Student("1", "John", "Doe", "Computer Science"),
+                new Student("2", "Jane", "Smith", "Mathematics"),
+                new Student("3", "Mariia", "Yarema", "Physics")
         ));
     }
 

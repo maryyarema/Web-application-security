@@ -12,8 +12,6 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -35,7 +33,6 @@ public class Student {
     @Override
     public final boolean equals(Object o) {
         if (!(o instanceof Student student)) return false;
-
         return getId().equals(student.getId());
     }
 
